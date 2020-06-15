@@ -1,0 +1,2276 @@
+/* PARTIALS
+=====================================
+    #RESET
+	#HTML5
+	#CLEARFIX
+	#TYPOGRAPHY
+===================================== */
+/* line 1, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_html5.scss */
+header, section, footer, aside, nav, article, figure {
+  display: block;
+}
+
+/* #Images (Responsive)
+================================================== */
+/* line 3, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_media.scss */
+img.scale-with-grid {
+  /*width: 100%;*/
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 9, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_media.scss */
+a img {
+  border: none;
+}
+
+/* #Video (Responsive)
+================================================== */
+/* line 16, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_media.scss */
+.video {
+  margin-bottom: 1em;
+}
+
+/* line 2, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_clearfix.scss */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+/* line 6, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_clearfix.scss */
+.group:after {
+  clear: both;
+}
+
+/* line 9, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_clearfix.scss */
+.group {
+  /*zoom: 1;  For IE 6/7 (trigger hasLayout) */
+}
+
+/*
+=================================================
+	Basic text sizing
+=================================================
+	Set your main font size for paragraph
+
+	Reference
+	62.5%  => 10px
+	68.8%  => 11px
+	75%    => 12px
+	81.3%  => 13px
+	87.5%  => 14px
+	100%   => 16px
+	112.5% => 18px
+	125%   => 20px
+
+*/
+/* line 19, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+body {
+  font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #333333;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/*
+Traditional scale: 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72
+	if base is 16:
+	h1 = 48 pixels → 48 ÷ 16 = 3 em
+	h2 = 36 pixels → 36 ÷ 16 = 2.25 em
+	h3 = 24 pixels → 24 ÷ 16 = 1.5 em
+	h4 = 21 pixels → 21 ÷ 16 = 1.3125 em
+	h5 = 18 pixels → 18 ÷ 16 = 1.125 em
+	h6 = 16 pixels → 16 ÷ 16 = 1 em
+*/
+/* line 39, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+/* OLD VERSION 
+h1, h2, h3, h4, h5, h6 { margin-bottom: .5em; }
+h1 { font-size: 3em; line-height: 1.15em; }
+h2 { font-size: 2.25em; line-height: 1.2em; }
+h3 { font-size: 1.5em; line-height: 1.25em; }
+h4 { font-size: 1.3125em; line-height: 1.3em; }
+h5 { font-size: 1.125em; line-height: 1.35em; }
+h6 { font-size: 1em; line-height: 1.4em; }
+*/
+/* NEW BASELINE VERSION 
+h1 { font-size: 3em; line-height: 1em; margin-bottom: .47em; padding-top: .03em; }
+h2 { font-size: 2.25em; line-height: 1.3334em; margin-bottom: .51em; padding-top: .15em; }
+h3 { font-size: 1.5em; line-height: 1em; margin-bottom: 1.1em; margin-top: -.1em; }
+h4 { font-size: 1.3125em; line-height: 1.1429em; margin-bottom: 1.2429em; margin-top: -.1em; }
+h5 { font-size: 1.125em; line-height: 1.3334em; margin-bottom: 1.3334em; }
+h6 { font-size: 1em; line-height: 1.5em; margin-bottom: 0; }
+*/
+/* SIMPLE VERSION */
+/* line 61, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5em;
+}
+
+/* line 65, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+h1 {
+  font-size: 3em;
+  /* 48px / 16px = 3em */
+  line-height: 1em;
+}
+
+/* line 70, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+h2 {
+  font-size: 2.25em;
+  /* 36px / 16px = 2.25em */
+  line-height: 1.1em;
+}
+
+/* line 75, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+h3 {
+  font-size: 1.5em;
+  /* 24px / 16px = 1.5em */
+  line-height: 1.2em;
+}
+
+/* line 80, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+h4 {
+  font-size: 1.3125em;
+  /* 21px / 16px = 1.3125em */
+  line-height: 1.3em;
+}
+
+/* line 85, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+h5 {
+  font-size: 1.125em;
+  /* 18px / 16px = 1.125em */
+  line-height: 1.4em;
+}
+
+/* line 90, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+h6 {
+  font-size: 1em;
+  /* 16px / 16px = 1em */
+  line-height: 1.5em;
+}
+
+/* #Paragraphs 
+================================================== */
+/* line 97, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+p {
+  margin-bottom: 1.5em;
+}
+
+/*
+p+p {
+  text-indent: 1em;
+  margin-top: -1.25em;
+}*/
+/* #Links
+================================================== */
+/* line 109, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+a {
+  color: #3399cc;
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 110, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+a:hover, a:focus {
+  color: #006699;
+}
+
+/* line 111, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+p a, p a:visited {
+  line-height: inherit;
+}
+
+/* #Lists
+================================================== */
+/* line 117, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+ul, ol {
+  margin: 0 0 1.5em 0;
+  clear: both;
+}
+
+/* line 122, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+li {
+  clear: both;
+  margin: 0 0 0 1.875em;
+}
+
+/* line 127, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+ul li ul, ul li ol, ol li ol, ol li ul {
+  margin: 0;
+}
+
+/* line 131, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+ul li ul li, ol li ol li, ol li ul li, ul li ol li {
+  margin: 0 0 0px 1.875em;
+}
+
+/* #Icons
+================================================== */
+/* line 140, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+ul.icons {
+  list-style: none;
+  margin: 0 0 1.25em .35em;
+}
+
+/* line 145, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+ul.icons li {
+  margin: 0 0 0 0;
+}
+
+/* line 149, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+ul.icons li a i {
+  color: #333333;
+}
+
+/* #Block Quotes
+================================================== */
+/* line 155, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+blockquote {
+  position: relative;
+  margin: 1em 0;
+  padding: 1.5em;
+  color: #666666;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/* line 164, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+blockquote.quotes {
+  padding: 1.5em 4em 1em 4em;
+}
+
+/* line 168, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+blockquote.quotes:before {
+  display: block;
+  content: "\201C";
+  font-size: 4em;
+  position: absolute;
+  top: .6em;
+  left: .3em;
+  color: #d9d9d9;
+}
+
+/* line 178, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+blockquote.quotes:after {
+  display: block;
+  content: "\201D";
+  font-size: 4em;
+  position: absolute;
+  bottom: .4em;
+  right: .3em;
+  color: #d9d9d9;
+}
+
+/* line 188, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+blockquote cite {
+  color: #999999;
+  font-size: .85em;
+  display: block;
+  text-align: right;
+}
+
+/* line 195, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+/* line 199, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+blockquote.left {
+  width: 23%;
+  float: left;
+  margin: 0 1em .5em 0;
+  border-right: 1px solid #cccccc;
+  text-align: right;
+}
+
+/* line 207, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/_typography_v1.scss */
+blockquote.right {
+  width: 23%;
+  float: right;
+  margin: 0 0 .5em 1em;
+  border-left: 1px solid #cccccc;
+}
+
+/* @FONT-FACE */
+@font-face {
+  font-family: 'MuseoSlab500';
+  src: url("../fonts/Museo/museo_slab_500-webfont.eot");
+  src: url("../fonts/Museo/museo_slab_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/museo_slab_500-webfont.woff") format("woff"), url("../fonts/Museo/museo_slab_500-webfont.ttf") format("truetype"), url("../fonts/Museo/museo_slab_500-webfont.svg#montserratbold") format("svg");
+}
+
+@font-face {
+  font-family: 'Museo300';
+  src: url("../fonts/Museo/museo300-regular-webfont.eot");
+  src: url("../fonts/Museo/museo300-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/museo300-regular-webfont.woff") format("woff"), url("../fonts/Museo/museo300-regular-webfont.ttf") format("truetype"), url("../fonts/Museo/museo300-regular-webfont.svg#montserratbold") format("svg");
+}
+
+/* A font by Jos Buivenga (exljbris) -> http://www.exljbris.com */
+@font-face {
+  font-family: 'MuseoSans500';
+  src: url("../fonts/Museo/MuseoSans_500-webfont.eot");
+  src: url("../fonts/Museo/MuseoSans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/MuseoSans_500-webfont.woff") format("woff"), url("../fonts/Museo/MuseoSans_500-webfont.ttf") format("truetype"), url("../fonts/Museo/MuseoSans_500-webfont.svg#montserratbold") format("svg");
+}
+
+/* */
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/Montserrat/montserrat-bold-webfont.eot");
+  src: url("../fonts/Montserrat/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/montserrat-bold-webfont.woff") format("woff"), url("../fonts/Montserrat/montserrat-bold-webfont.ttf") format("truetype"), url("../fonts/Montserrat/montserrat-bold-webfont.svg#montserratbold") format("svg");
+}
+
+/* */
+@font-face {
+  font-family: 'nevis';
+  src: url("../fonts/Nevis/nevis-webfont.eot");
+  src: url("../fonts/Nevis/nevis-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Nevis/nevis-webfont.woff") format("woff"), url("../fonts/Nevis/nevis-webfont.ttf") format("truetype"), url("../fonts/Nevis/nevis-webfont.svg#montserratbold") format("svg");
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("../fonts/OpenSans/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Regular-webfont.svg#OpenSansLight") format("svg");
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url("../fonts/OpenSans/OpenSans-Light-webfont.eot");
+  src: url("../fonts/OpenSans/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Light-webfont.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Light-webfont.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
+}
+
+@font-face {
+  font-family: 'OpenSansExtraBold';
+  src: url("../fonts/OpenSans/OpenSans-ExtraBold-webfont.eot");
+  src: url("../fonts/OpenSans/OpenSans-ExtraBold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-ExtraBold-webfont.woff") format("woff"), url("../fonts/OpenSans/OpenSans-ExtraBold-webfont.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-ExtraBold-webfont.svg#OpenSansLight") format("svg");
+}
+
+@font-face {
+  font-family: 'ChunkFiveRegular';
+  src: url("../../framework/fonts/Chunkfive-webfont.eot");
+  src: url("../../framework/fonts/Chunkfive-webfont.eot?#iefix") format("embedded-opentype"), url("../../framework/fonts/Chunkfive-webfont.woff") format("woff"), url("../../framework/fonts/Chunkfive-webfont.ttf") format("truetype"), url("../../framework/fonts/Chunkfive-webfont.svg#ChunkFiveRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PacificoRegular';
+  src: url("../fonts/Pacifico/Pacifico-webfont.eot");
+  src: url("../fonts/Pacifico/Pacifico-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Pacifico/Pacifico-webfont.woff") format("woff"), url("../fonts/Pacifico/Pacifico-webfont.ttf") format("truetype"), url("../fonts/Pacifico/Pacifico-webfont.svg#PacificoRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'HoneyScriptLight';
+  src: url("../fonts/HoneyScript/honeyscript-light-webfont.eot");
+  src: url("../fonts/HoneyScript/honeyscript-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HoneyScript/honeyscript-light-webfont.woff") format("woff"), url("../fonts/HoneyScript/honeyscript-light-webfont.ttf") format("truetype"), url("../fonts/HoneyScript/honeyscript-light-webfont.svg#HoneyScriptLight") format("svg");
+}
+
+@font-face {
+  font-family: 'BebasRegular';
+  src: url("../fonts/Bebas/BEBAS___-webfont.eot");
+  src: url("../fonts/Bebas/BEBAS___-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Bebas/BEBAS___-webfont.woff") format("woff"), url("../fonts/Bebas/BEBAS___-webfont.ttf") format("truetype"), url("../fonts/Bebas/BEBAS___-webfont.svg#BebasRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeue-webfont.eot");
+  src: url("../fonts/BebasNeue/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue/BebasNeue-webfont.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeue-webfont.svg#BebasRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VarelaRegular';
+  src: url("../fonts/Varela/varela-regular-webfont.eot");
+  src: url("../fonts/Varela/varela-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Varela/varela-regular-webfont.woff") format("woff"), url("../fonts/Varela/varela-regular-webfont.ttf") format("truetype"), url("../fonts/Varela/varela-regular-webfont.svg#varelaregular") format("svg");
+}
+
+/* LOGO TREATMENT
+===================================== */
+/* line 4, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/design/_logo-dropshadow1.scss */
+header .logo {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* line 9, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/design/_logo-dropshadow1.scss */
+header .logo h1 {
+  margin: .5em auto 0 auto;
+  font-size: 2em;
+  font-family: "VarelaRegular";
+  white-space: nowrap;
+}
+
+/* line 16, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/design/_logo-dropshadow1.scss */
+header .logo h1 a {
+  /* text-shadow: h-shadow v-shadow blur color;*/
+  text-shadow: 2px 2px 0px white, 3px 3px 0px rgba(0, 0, 0, 0.35);
+  text-transform: uppercase;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+  padding: .2em 0 .4em 0;
+}
+
+/* line 28, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/design/_logo-dropshadow1.scss */
+header .logo p.tagline {
+  display: inline-block;
+  font-family: "MuseoSans500";
+  text-align: center;
+  font-size: .6em;
+  line-height: 1em;
+  text-transform: uppercase;
+  background-color: #fff;
+  position: relative;
+  top: .3em;
+  padding: 0 1em;
+  color: #999;
+  margin: 0 0 3em 0;
+  white-space: nowrap;
+}
+
+/* line 1, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+nav.mainnav {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 0 10px;
+  /*to match the grid padding */
+}
+
+/* line 7, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+nav.mainnav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* line 15, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+nav.mainnav ul li {
+  display: inline-block;
+  border-left: 1px solid #f6f6f6;
+  white-space: nowrap;
+  padding: 0px 1em;
+  margin: 0;
+}
+
+/* line 23, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+nav.mainnav ul li:first-child {
+  border-left: none;
+}
+
+/* line 27, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+nav.mainnav ul li a {
+  text-align: center;
+  display: inline-block;
+  color: #333;
+  padding: .5em 1em;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-weight: bold;
+}
+
+/* line 38, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+nav.mainnav ul li a small {
+  display: block;
+  text-transform: capitalize;
+  font-size: .625em;
+  line-height: .625em;
+  font-weight: normal;
+  color: #aaa;
+}
+
+/* line 47, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+nav.mainnav ul li.selected a, nav.mainnav ul li.selected a:hover {
+  color: #000;
+  border-top: 3px solid #000;
+}
+
+/* line 52, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+nav.mainnav ul li a:hover {
+  color: #000;
+  border-top: 3px solid #39c;
+}
+
+/* MEDIA QUERIES
+===================================== */
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+  /* line 66, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+  nav.mainnav {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0;
+  }
+
+  /* line 76, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+  nav.mainnav ul li {
+    display: block;
+    padding: 0;
+  }
+
+  /* line 81, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+  nav.mainnav ul li a {
+    display: block;
+    padding: .5em 0;
+    border-bottom: 1px solid #efefef;
+  }
+
+  /* line 87, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+  nav.mainnav ul li:last-child a {
+    border-bottom: none;
+  }
+
+  /* line 91, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+  nav.mainnav ul li.selected a, nav.mainnav ul li.selected a:hover {
+    border-top: none;
+    background: #efefef;
+    color: #000;
+  }
+
+  /* line 97, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+  nav.mainnav ul li.selected a small, nav.mainnav ul li.selected a:hover small {
+    color: #aaa;
+  }
+
+  /* line 101, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+  nav.mainnav ul li a:hover {
+    border-top: none;
+    background: #39c;
+  }
+
+  /* line 106, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+  nav.mainnav ul li a:hover {
+    color: #fff;
+  }
+
+  /* line 110, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/ui/_mainnav.scss */
+  nav.mainnav ul li a:hover small {
+    color: #333;
+  }
+}
+/*
+* Based on Skeleton by Dave Gamache and 960 Grid
+* www.getskeleton.com
+*/
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait + Landscape)
+
+
+
+/* #Base 960 Grid
+================================================== */
+/* line 18, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 20, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .column,
+.container .columns {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 21, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.row {
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Nested Column Classes */
+/* line 24, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.column.alpha, .columns.alpha {
+  margin-left: 0;
+}
+
+/* line 25, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.column.omega, .columns.omega {
+  margin-right: 0;
+}
+
+/* Base Grid */
+/* line 29, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .one.column,
+.container .one.columns {
+  width: 40px;
+}
+
+/* line 30, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .two.columns {
+  width: 100px;
+}
+
+/* line 31, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .three.columns {
+  width: 160px;
+}
+
+/* line 32, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .four.columns {
+  width: 220px;
+}
+
+/* line 33, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .five.columns {
+  width: 280px;
+}
+
+/* line 34, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .six.columns {
+  width: 340px;
+}
+
+/* line 35, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .seven.columns {
+  width: 400px;
+}
+
+/* line 36, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .eight.columns {
+  width: 460px;
+}
+
+/* line 37, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .nine.columns {
+  width: 520px;
+}
+
+/* line 38, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .ten.columns {
+  width: 580px;
+}
+
+/* line 39, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .eleven.columns {
+  width: 640px;
+}
+
+/* line 40, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .twelve.columns {
+  width: 700px;
+}
+
+/* line 41, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .thirteen.columns {
+  width: 760px;
+}
+
+/* line 42, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .fourteen.columns {
+  width: 820px;
+}
+
+/* line 43, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .fifteen.columns {
+  width: 880px;
+}
+
+/* line 44, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .sixteen.columns {
+  width: 940px;
+}
+
+/* line 46, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .one-quarter.column {
+  width: 220px;
+}
+
+/* line 47, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .three-quarters.column {
+  width: 700px;
+}
+
+/* line 48, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .one-third.column {
+  width: 300px;
+}
+
+/* line 49, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .two-thirds.column {
+  width: 620px;
+}
+
+/* line 50, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .one-half.column {
+  width: 460px;
+}
+
+/* Offsets */
+/* line 53, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-one {
+  padding-left: 60px;
+}
+
+/* line 54, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-two {
+  padding-left: 120px;
+}
+
+/* line 55, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-three {
+  padding-left: 180px;
+}
+
+/* line 56, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-four {
+  padding-left: 240px;
+}
+
+/* line 57, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-five {
+  padding-left: 300px;
+}
+
+/* line 58, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-six {
+  padding-left: 360px;
+}
+
+/* line 59, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-seven {
+  padding-left: 420px;
+}
+
+/* line 60, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-eight {
+  padding-left: 480px;
+}
+
+/* line 61, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-nine {
+  padding-left: 540px;
+}
+
+/* line 62, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-ten {
+  padding-left: 600px;
+}
+
+/* line 63, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-eleven {
+  padding-left: 660px;
+}
+
+/* line 64, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-twelve {
+  padding-left: 720px;
+}
+
+/* line 65, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-thirteen {
+  padding-left: 780px;
+}
+
+/* line 66, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-fourteen {
+  padding-left: 840px;
+}
+
+/* line 67, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .offset-by-fifteen {
+  padding-left: 900px;
+}
+
+/* Skeleton-specific Type Adjustments */
+/* line 70, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .sixteen.columns {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/* line 75, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .sixteen.columns p:first-of-type {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+/* line 80, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container .sixteen.columns p:first-of-type:first-line {
+  font-variant: small-caps;
+  font-size: 1.1em;
+}
+
+/* line 85, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+.container footer .sixteen.columns, .container footer .sixteen.columns p:first-of-type, .container footer .sixteen.columns p:first-of-type:first-line {
+  font-variant: normal;
+  font-size: 1em;
+}
+
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 97, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container {
+    width: 768px;
+  }
+
+  /* line 99, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .column,
+  .container .columns {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* line 100, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .column.alpha, .columns.alpha {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  /* line 101, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .column.omega, .columns.omega {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  /* line 102, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .alpha.omega {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 105, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .one.column,
+  .container .one.columns {
+    width: 28px;
+  }
+
+  /* line 106, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .two.columns {
+    width: 76px;
+  }
+
+  /* line 107, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .three.columns {
+    width: 124px;
+  }
+
+  /* line 108, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .four.columns {
+    width: 172px;
+  }
+
+  /* line 109, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .five.columns {
+    width: 220px;
+  }
+
+  /* line 110, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .six.columns {
+    width: 268px;
+  }
+
+  /* line 111, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .seven.columns {
+    width: 316px;
+  }
+
+  /* line 112, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .eight.columns {
+    width: 364px;
+  }
+
+  /* line 113, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .nine.columns {
+    width: 412px;
+  }
+
+  /* line 114, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .ten.columns {
+    width: 460px;
+  }
+
+  /* line 115, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .eleven.columns {
+    width: 508px;
+  }
+
+  /* line 116, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .twelve.columns {
+    width: 556px;
+  }
+
+  /* line 117, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .thirteen.columns {
+    width: 604px;
+  }
+
+  /* line 118, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .fourteen.columns {
+    width: 652px;
+  }
+
+  /* line 119, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .fifteen.columns {
+    width: 700px;
+  }
+
+  /* line 120, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .sixteen.columns {
+    width: 748px;
+  }
+
+  /* line 122, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .one-quarter.column {
+    width: 172px;
+  }
+
+  /* line 123, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .three-quarters.column {
+    width: 556px;
+  }
+
+  /* line 124, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .one-third.column {
+    width: 236px;
+  }
+
+  /* line 125, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .two-thirds.column {
+    width: 492px;
+  }
+
+  /* line 126, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .one-half.column {
+    width: 364px;
+  }
+
+  /* Offsets */
+  /* line 129, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-one {
+    padding-left: 48px;
+  }
+
+  /* line 130, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-two {
+    padding-left: 96px;
+  }
+
+  /* line 131, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-three {
+    padding-left: 144px;
+  }
+
+  /* line 132, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-four {
+    padding-left: 192px;
+  }
+
+  /* line 133, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-five {
+    padding-left: 240px;
+  }
+
+  /* line 134, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-six {
+    padding-left: 288px;
+  }
+
+  /* line 135, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-seven {
+    padding-left: 336px;
+  }
+
+  /* line 136, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-eight {
+    padding-left: 384px;
+  }
+
+  /* line 137, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-nine {
+    padding-left: 432px;
+  }
+
+  /* line 138, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-ten {
+    padding-left: 480px;
+  }
+
+  /* line 139, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-eleven {
+    padding-left: 528px;
+  }
+
+  /* line 140, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-twelve {
+    padding-left: 576px;
+  }
+
+  /* line 141, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-thirteen {
+    padding-left: 624px;
+  }
+
+  /* line 142, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-fourteen {
+    padding-left: 672px;
+  }
+
+  /* line 143, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-fifteen {
+    padding-left: 720px;
+  }
+}
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  /* line 152, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container {
+    width: 80%;
+    padding: 0 1%;
+  }
+
+  /* line 154, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .columns,
+  .container .column {
+    margin: 0;
+  }
+
+  /* line 177, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .one.column,
+  .container .one.columns,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-quarter.column,
+  .container .three-quarters.colum,
+  .container .one-third.column,
+  .container .two-thirds.column,
+  .container .one-half.column {
+    width: 100%;
+  }
+
+  /* Offsets */
+  /* line 194, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .offset-by-one,
+  .container .offset-by-two,
+  .container .offset-by-three,
+  .container .offset-by-four,
+  .container .offset-by-five,
+  .container .offset-by-six,
+  .container .offset-by-seven,
+  .container .offset-by-eight,
+  .container .offset-by-nine,
+  .container .offset-by-ten,
+  .container .offset-by-eleven,
+  .container .offset-by-twelve,
+  .container .offset-by-thirteen,
+  .container .offset-by-fourteen,
+  .container .offset-by-fifteen {
+    padding-left: 0;
+  }
+
+  /* Skeleton-specific Type Adjustments */
+  /* line 197, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/partials/layout/_skeleton-tofluidmobile.scss */
+  .container .sixteen.columns {
+    font-size: 1em;
+  }
+}
+/* VENDORS/THIRD PARTY
+=====================================
+    #ICON SET
+===================================== */
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot");
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot?#iefix") format("eot"), url("../fonts/FontAwesome/fontawesome-webfont.woff") format("woff"), url("../fonts/FontAwesome/fontawesome-webfont.ttf") format("truetype"), url("../fonts/FontAwesome/fontawesome-webfont.svg#FontAwesome") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+/* line 34, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* line 41, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+a [class^="icon-"], a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 46, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+
+/* line 50, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+  line-height: .9em;
+}
+
+/* line 55, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+
+/* line 60, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+  width: 1.875em;
+}
+
+/* line 65, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+/* line 69, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+li[class^="icon-"]:before, li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+
+/* line 73, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
+  text-indent: -1.33333em;
+}
+
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+/* line 78, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-glass:before {
+  content: "\f000";
+}
+
+/* line 79, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-music:before {
+  content: "\f001";
+}
+
+/* line 80, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-search:before {
+  content: "\f002";
+}
+
+/* line 81, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-envelope:before {
+  content: "\f003";
+}
+
+/* line 82, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-heart:before {
+  content: "\f004";
+}
+
+/* line 83, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-star:before {
+  content: "\f005";
+}
+
+/* line 84, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-star-empty:before {
+  content: "\f006";
+}
+
+/* line 85, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-user:before {
+  content: "\f007";
+}
+
+/* line 86, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-film:before {
+  content: "\f008";
+}
+
+/* line 87, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-th-large:before {
+  content: "\f009";
+}
+
+/* line 88, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-th:before {
+  content: "\f00a";
+}
+
+/* line 89, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-th-list:before {
+  content: "\f00b";
+}
+
+/* line 90, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-ok:before {
+  content: "\f00c";
+}
+
+/* line 91, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-remove:before {
+  content: "\f00d";
+}
+
+/* line 92, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-zoom-in:before {
+  content: "\f00e";
+}
+
+/* line 94, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-zoom-out:before {
+  content: "\f010";
+}
+
+/* line 95, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-off:before {
+  content: "\f011";
+}
+
+/* line 96, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-signal:before {
+  content: "\f012";
+}
+
+/* line 97, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-cog:before {
+  content: "\f013";
+}
+
+/* line 98, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-trash:before {
+  content: "\f014";
+}
+
+/* line 99, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-home:before {
+  content: "\f015";
+}
+
+/* line 100, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-file:before {
+  content: "\f016";
+}
+
+/* line 101, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-time:before {
+  content: "\f017";
+}
+
+/* line 102, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-road:before {
+  content: "\f018";
+}
+
+/* line 103, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-download-alt:before {
+  content: "\f019";
+}
+
+/* line 104, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-download:before {
+  content: "\f01a";
+}
+
+/* line 105, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-upload:before {
+  content: "\f01b";
+}
+
+/* line 106, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-inbox:before {
+  content: "\f01c";
+}
+
+/* line 107, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-play-circle:before {
+  content: "\f01d";
+}
+
+/* line 108, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-repeat:before {
+  content: "\f01e";
+}
+
+/* \f020 doesn't work in Safari. all shifted one down */
+/* line 111, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-refresh:before {
+  content: "\f021";
+}
+
+/* line 112, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-list-alt:before {
+  content: "\f022";
+}
+
+/* line 113, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-lock:before {
+  content: "\f023";
+}
+
+/* line 114, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-flag:before {
+  content: "\f024";
+}
+
+/* line 115, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-headphones:before {
+  content: "\f025";
+}
+
+/* line 116, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-volume-off:before {
+  content: "\f026";
+}
+
+/* line 117, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-volume-down:before {
+  content: "\f027";
+}
+
+/* line 118, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-volume-up:before {
+  content: "\f028";
+}
+
+/* line 119, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-qrcode:before {
+  content: "\f029";
+}
+
+/* line 120, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-barcode:before {
+  content: "\f02a";
+}
+
+/* line 121, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-tag:before {
+  content: "\f02b";
+}
+
+/* line 122, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-tags:before {
+  content: "\f02c";
+}
+
+/* line 123, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-book:before {
+  content: "\f02d";
+}
+
+/* line 124, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-bookmark:before {
+  content: "\f02e";
+}
+
+/* line 125, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-print:before {
+  content: "\f02f";
+}
+
+/* line 127, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-camera:before {
+  content: "\f030";
+}
+
+/* line 128, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-font:before {
+  content: "\f031";
+}
+
+/* line 129, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-bold:before {
+  content: "\f032";
+}
+
+/* line 130, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-italic:before {
+  content: "\f033";
+}
+
+/* line 131, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-text-height:before {
+  content: "\f034";
+}
+
+/* line 132, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-text-width:before {
+  content: "\f035";
+}
+
+/* line 133, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-align-left:before {
+  content: "\f036";
+}
+
+/* line 134, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-align-center:before {
+  content: "\f037";
+}
+
+/* line 135, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-align-right:before {
+  content: "\f038";
+}
+
+/* line 136, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-align-justify:before {
+  content: "\f039";
+}
+
+/* line 137, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-list:before {
+  content: "\f03a";
+}
+
+/* line 138, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-indent-left:before {
+  content: "\f03b";
+}
+
+/* line 139, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-indent-right:before {
+  content: "\f03c";
+}
+
+/* line 140, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-facetime-video:before {
+  content: "\f03d";
+}
+
+/* line 141, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-picture:before {
+  content: "\f03e";
+}
+
+/* line 143, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-pencil:before {
+  content: "\f040";
+}
+
+/* line 144, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-map-marker:before {
+  content: "\f041";
+}
+
+/* line 145, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-adjust:before {
+  content: "\f042";
+}
+
+/* line 146, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-tint:before {
+  content: "\f043";
+}
+
+/* line 147, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-edit:before {
+  content: "\f044";
+}
+
+/* line 148, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-share:before {
+  content: "\f045";
+}
+
+/* line 149, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-check:before {
+  content: "\f046";
+}
+
+/* line 150, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-move:before {
+  content: "\f047";
+}
+
+/* line 151, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-step-backward:before {
+  content: "\f048";
+}
+
+/* line 152, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-fast-backward:before {
+  content: "\f049";
+}
+
+/* line 153, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-backward:before {
+  content: "\f04a";
+}
+
+/* line 154, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-play:before {
+  content: "\f04b";
+}
+
+/* line 155, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-pause:before {
+  content: "\f04c";
+}
+
+/* line 156, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-stop:before {
+  content: "\f04d";
+}
+
+/* line 157, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-forward:before {
+  content: "\f04e";
+}
+
+/* line 159, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-fast-forward:before {
+  content: "\f050";
+}
+
+/* line 160, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-step-forward:before {
+  content: "\f051";
+}
+
+/* line 161, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-eject:before {
+  content: "\f052";
+}
+
+/* line 162, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 163, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 164, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-plus-sign:before {
+  content: "\f055";
+}
+
+/* line 165, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-minus-sign:before {
+  content: "\f056";
+}
+
+/* line 166, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-remove-sign:before {
+  content: "\f057";
+}
+
+/* line 167, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-ok-sign:before {
+  content: "\f058";
+}
+
+/* line 168, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-question-sign:before {
+  content: "\f059";
+}
+
+/* line 169, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-info-sign:before {
+  content: "\f05a";
+}
+
+/* line 170, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-screenshot:before {
+  content: "\f05b";
+}
+
+/* line 171, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-remove-circle:before {
+  content: "\f05c";
+}
+
+/* line 172, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-ok-circle:before {
+  content: "\f05d";
+}
+
+/* line 173, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-ban-circle:before {
+  content: "\f05e";
+}
+
+/* line 175, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-arrow-left:before {
+  content: "\f060";
+}
+
+/* line 176, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-arrow-right:before {
+  content: "\f061";
+}
+
+/* line 177, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-arrow-up:before {
+  content: "\f062";
+}
+
+/* line 178, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-arrow-down:before {
+  content: "\f063";
+}
+
+/* line 179, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-share-alt:before {
+  content: "\f064";
+}
+
+/* line 180, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-resize-full:before {
+  content: "\f065";
+}
+
+/* line 181, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-resize-small:before {
+  content: "\f066";
+}
+
+/* line 182, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-plus:before {
+  content: "\f067";
+}
+
+/* line 183, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-minus:before {
+  content: "\f068";
+}
+
+/* line 184, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-asterisk:before {
+  content: "\f069";
+}
+
+/* line 185, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-exclamation-sign:before {
+  content: "\f06a";
+}
+
+/* line 186, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-gift:before {
+  content: "\f06b";
+}
+
+/* line 187, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-leaf:before {
+  content: "\f06c";
+}
+
+/* line 188, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-fire:before {
+  content: "\f06d";
+}
+
+/* line 189, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-eye-open:before {
+  content: "\f06e";
+}
+
+/* line 191, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-eye-close:before {
+  content: "\f070";
+}
+
+/* line 192, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-warning-sign:before {
+  content: "\f071";
+}
+
+/* line 193, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-plane:before {
+  content: "\f072";
+}
+
+/* line 194, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-calendar:before {
+  content: "\f073";
+}
+
+/* line 195, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-random:before {
+  content: "\f074";
+}
+
+/* line 196, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-comment:before {
+  content: "\f075";
+}
+
+/* line 197, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-magnet:before {
+  content: "\f076";
+}
+
+/* line 198, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 199, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 200, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-retweet:before {
+  content: "\f079";
+}
+
+/* line 201, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 202, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-folder-close:before {
+  content: "\f07b";
+}
+
+/* line 203, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-folder-open:before {
+  content: "\f07c";
+}
+
+/* line 204, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-resize-vertical:before {
+  content: "\f07d";
+}
+
+/* line 205, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-resize-horizontal:before {
+  content: "\f07e";
+}
+
+/* line 207, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-bar-chart:before {
+  content: "\f080";
+}
+
+/* line 208, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-twitter-sign:before {
+  content: "\f081";
+}
+
+/* line 209, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-facebook-sign:before {
+  content: "\f082";
+}
+
+/* line 210, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 211, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-key:before {
+  content: "\f084";
+}
+
+/* line 212, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-cogs:before {
+  content: "\f085";
+}
+
+/* line 213, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-comments:before {
+  content: "\f086";
+}
+
+/* line 214, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-thumbs-up:before {
+  content: "\f087";
+}
+
+/* line 215, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-thumbs-down:before {
+  content: "\f088";
+}
+
+/* line 216, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-star-half:before {
+  content: "\f089";
+}
+
+/* line 217, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-heart-empty:before {
+  content: "\f08a";
+}
+
+/* line 218, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-signout:before {
+  content: "\f08b";
+}
+
+/* line 219, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-linkedin-sign:before {
+  content: "\f08c";
+}
+
+/* line 220, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-pushpin:before {
+  content: "\f08d";
+}
+
+/* line 221, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-external-link:before {
+  content: "\f08e";
+}
+
+/* line 223, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-signin:before {
+  content: "\f090";
+}
+
+/* line 224, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-trophy:before {
+  content: "\f091";
+}
+
+/* line 225, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-github-sign:before {
+  content: "\f092";
+}
+
+/* line 226, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-upload-alt:before {
+  content: "\f093";
+}
+
+/* line 227, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-lemon:before {
+  content: "\f094";
+}
+
+/* line 228, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-phone:before {
+  content: "\f095";
+}
+
+/* line 229, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-check-empty:before {
+  content: "\f096";
+}
+
+/* line 230, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-bookmark-empty:before {
+  content: "\f097";
+}
+
+/* line 231, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-phone-sign:before {
+  content: "\f098";
+}
+
+/* line 232, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-twitter:before {
+  content: "\f099";
+}
+
+/* line 233, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+/* line 234, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-github:before {
+  content: "\f09b";
+}
+
+/* line 235, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-unlock:before {
+  content: "\f09c";
+}
+
+/* line 236, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-credit-card:before {
+  content: "\f09d";
+}
+
+/* line 237, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-rss:before {
+  content: "\f09e";
+}
+
+/* line 239, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-hdd:before {
+  content: "\f0a0";
+}
+
+/* line 240, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-bullhorn:before {
+  content: "\f0a1";
+}
+
+/* line 241, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-bell:before {
+  content: "\f0a2";
+}
+
+/* line 242, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-certificate:before {
+  content: "\f0a3";
+}
+
+/* line 243, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-hand-right:before {
+  content: "\f0a4";
+}
+
+/* line 244, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-hand-left:before {
+  content: "\f0a5";
+}
+
+/* line 245, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-hand-up:before {
+  content: "\f0a6";
+}
+
+/* line 246, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-hand-down:before {
+  content: "\f0a7";
+}
+
+/* line 247, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-circle-arrow-left:before {
+  content: "\f0a8";
+}
+
+/* line 248, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-circle-arrow-right:before {
+  content: "\f0a9";
+}
+
+/* line 249, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-circle-arrow-up:before {
+  content: "\f0aa";
+}
+
+/* line 250, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-circle-arrow-down:before {
+  content: "\f0ab";
+}
+
+/* line 251, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-globe:before {
+  content: "\f0ac";
+}
+
+/* line 252, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-wrench:before {
+  content: "\f0ad";
+}
+
+/* line 253, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-tasks:before {
+  content: "\f0ae";
+}
+
+/* line 255, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-filter:before {
+  content: "\f0b0";
+}
+
+/* line 256, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-briefcase:before {
+  content: "\f0b1";
+}
+
+/* line 257, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-fullscreen:before {
+  content: "\f0b2";
+}
+
+/* line 259, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-group:before {
+  content: "\f0c0";
+}
+
+/* line 260, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-link:before {
+  content: "\f0c1";
+}
+
+/* line 261, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-cloud:before {
+  content: "\f0c2";
+}
+
+/* line 262, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-beaker:before {
+  content: "\f0c3";
+}
+
+/* line 263, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-cut:before {
+  content: "\f0c4";
+}
+
+/* line 264, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-copy:before {
+  content: "\f0c5";
+}
+
+/* line 265, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-paper-clip:before {
+  content: "\f0c6";
+}
+
+/* line 266, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-save:before {
+  content: "\f0c7";
+}
+
+/* line 267, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-sign-blank:before {
+  content: "\f0c8";
+}
+
+/* line 268, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-reorder:before {
+  content: "\f0c9";
+}
+
+/* line 269, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-list-ul:before {
+  content: "\f0ca";
+}
+
+/* line 270, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-list-ol:before {
+  content: "\f0cb";
+}
+
+/* line 271, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-strikethrough:before {
+  content: "\f0cc";
+}
+
+/* line 272, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-underline:before {
+  content: "\f0cd";
+}
+
+/* line 273, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-table:before {
+  content: "\f0ce";
+}
+
+/* line 275, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-magic:before {
+  content: "\f0d0";
+}
+
+/* line 276, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-truck:before {
+  content: "\f0d1";
+}
+
+/* line 277, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+
+/* line 278, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-pinterest-sign:before {
+  content: "\f0d3";
+}
+
+/* line 279, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-google-plus-sign:before {
+  content: "\f0d4";
+}
+
+/* line 280, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 281, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-money:before {
+  content: "\f0d6";
+}
+
+/* line 282, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+
+/* line 283, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-caret-up:before {
+  content: "\f0d8";
+}
+
+/* line 284, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+
+/* line 285, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-caret-right:before {
+  content: "\f0da";
+}
+
+/* line 286, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-columns:before {
+  content: "\f0db";
+}
+
+/* line 287, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-sort:before {
+  content: "\f0dc";
+}
+
+/* line 288, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-sort-down:before {
+  content: "\f0dd";
+}
+
+/* line 289, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-sort-up:before {
+  content: "\f0de";
+}
+
+/* line 291, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-envelope-alt:before {
+  content: "\f0e0";
+}
+
+/* line 292, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+
+/* line 293, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-undo:before {
+  content: "\f0e2";
+}
+
+/* line 294, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-legal:before {
+  content: "\f0e3";
+}
+
+/* line 295, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-dashboard:before {
+  content: "\f0e4";
+}
+
+/* line 296, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-comment-alt:before {
+  content: "\f0e5";
+}
+
+/* line 297, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-comments-alt:before {
+  content: "\f0e6";
+}
+
+/* line 298, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-bolt:before {
+  content: "\f0e7";
+}
+
+/* line 299, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-sitemap:before {
+  content: "\f0e8";
+}
+
+/* line 300, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-umbrella:before {
+  content: "\f0e9";
+}
+
+/* line 301, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-paste:before {
+  content: "\f0ea";
+}
+
+/* line 303, /Users/NMA/Desktop/Chris_MAC/code/projects/framework_v1/scss/../../../sass/vendor/_font-awesome.scss */
+.icon-user-md:before {
+  content: "\f200";
+}
+
+/* line 6, ../scss/style.scss */
+.container {
+  padding: 2em 0 0 0;
+}
+
+/* line 10, ../scss/style.scss */
+.byline {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  color: gray;
+  margin-top: -0.8em;
+}
+
+/* line 18, ../scss/style.scss */
+a + h3 {
+  margin-top: .5em;
+}
+
+/* line 22, ../scss/style.scss */
+.copyright {
+  color: gray;
+}

@@ -1,0 +1,44 @@
+// Compass
+@import "compass";
+
+// Modules
+@import "../../../sass/modules/all";
+
+// Base Font
+$base-font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif;
+$base-font-size: 100%;
+$base-font-weight: normal; 
+$base-font-color: $color-main;
+$base-line-height: 1.5;
+
+/* PARTIALS
+=====================================
+    #RESET
+	#HTML5
+	#CLEARFIX
+	#TYPOGRAPHY
+===================================== */
+
+// Partials - Global
+@import "../../../sass/partials/reset";
+@import "../../../sass/partials/html5";
+@import "../../../sass/partials/media";
+@import "../../../sass/partials/clearfix";
+@import "../../../sass/partials/typography_v1";
+
+// Partials - Design
+@import "../../../sass/partials/design/logo-dropshadow1";
+
+// Partials - UI
+@import "../../../sass/partials/ui/mainnav";
+
+// Partials - Layout
+@import "../../../sass/partials/layout/skeleton-tofluidmobile";
+
+
+/* VENDORS/THIRD PARTY
+=====================================
+    #ICON SET
+===================================== */
+// Vendors
+@import "../../../sass/vendor/font-awesome"; 
